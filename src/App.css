@@ -1,7 +1,8 @@
 html, body, #root {
-  height: 100%;
+  height: 100vh;
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .App {
@@ -11,7 +12,6 @@ html, body, #root {
   padding: 0;
   font-family: sans-serif;
   text-align: center;
-  overflow: hidden;
 }
 
 .Header {
@@ -38,18 +38,19 @@ html, body, #root {
   flex: 1;
   background: lightgrey;
   padding: 20px;
+  padding-top: .5px;
   text-align: right;
   font-family: century;
   height: 100vh;
-  flex-grow: 1;
 }
 
 .Experience {
-  flex: 2;
+  flex: 2 ;
   text-align: left;
   padding: 20px;
   font-family: century;
-  padding-top: 20px;
+  padding-top: .5px;
+  padding-bottom: 0%;
 
 }
 
@@ -72,38 +73,4 @@ a:hover{
 @font-face {
   font-family: coco;
   src: url(Cocogoose-Pro-Ultralight-trial.ttf);
-}
-
-@media only screen and (max-width: 768px) {
-  html, body, #root {
-    height: 100%;
-    margin: 0;
-    padding: 0; 
-    font-size: small;
-  }
-
-  .App {
-    overflow: auto;
-  }
-
-  .Header {
-    height: 5%;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-size: 8px;
-  }
-
-  .Content {
-    flex-direction: column;
-  }
-
-  .Contact {
-    flex: 1;
-    padding: 10px;
-  }
-
-  .Experience {
-    flex: 1;
-    padding: 10px;
-  }
 }
